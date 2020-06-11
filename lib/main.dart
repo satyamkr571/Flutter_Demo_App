@@ -36,7 +36,12 @@ class RandomWordsState extends State<RandomWords> {
         return Container(
           height: 50,
           color: Colors.white,
-          child: Center(child: Text('${randomwords[index]}')),
+          child: Center(
+              child: Text(
+            '${randomwords[index]}',
+            style: TextStyle(
+                fontWeight: FontWeight.bold, fontSize: 20, color: Colors.black, letterSpacing: 1),
+          )),
         );
       },
     );
